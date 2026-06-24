@@ -38,7 +38,7 @@ function App() {
   return (
     
     <Container>
-      <Titulo>Este é um exemplo de componente utilizando @Emotion no React para estilização dinamica CSS-in-Js.</Titulo>
+      <Titulo>Este é um exemplo de componente utilizando @Emotion no React para estilização dinâmica CSS-in-Js.</Titulo>
       <Card/>
     </Container>
     
