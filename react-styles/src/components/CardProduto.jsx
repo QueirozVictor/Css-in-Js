@@ -2,7 +2,6 @@ import { useState } from 'react';
 import  styled  from '@emotion/styled'
 
 
-
 const Card = styled.div`
 display: flex;
 flex-direction: column;
@@ -14,16 +13,20 @@ box-shadow: 1px 1px 5px gray;
 margin-top: 10%;
 padding: 10px;
 width: 70%;
+@media(min-width: 650px){
+width: 50%;
+justify-self: center;
+margin-top: 0;
+}
 `;
 
 const NomeProduto = styled.h1`
-font-size: 2rem;
+font-size: clamp(1.5rem, 4vw, 3rem);
 color: #282828;
 text-shadow: 1px 1px 1px lightgray;
 `;
 
 const ImagemProduto = styled.img`
-width: 100%;
 object-fit: cover;
 border-radius: 5px;
 `;
@@ -31,18 +34,18 @@ border-radius: 5px;
 
 const PrecoProduto = styled.h3`
 color: red;
-font-size
+font-size: clamp(1.5rem, 4vw, 3rem);
 text-shadow: 1px 1px 1px lightgray;
 `;
 
 const Botao = styled.button`
 background-color: ${({adicionado}) => adicionado ? "#198754"  : "#6c757d"};
+font-size: clamp(1rem, 2vw, 2rem);
 border: none;
 border-radius: 8px;
 color: white;
 padding: 10px;
-text-shadow: 1px 1px 0px lightgray;
-
+text-shadow: 1px 0px 0px lightgray;
 `;
 
 
