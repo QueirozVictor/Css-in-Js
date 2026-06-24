@@ -68,4 +68,4 @@ width: 40%;
 padding: 10px;
 }
 
-`;function nn(){return qt(en,{children:[Kt(tn,{children:`Este é um exemplo de componente utilizando @Emotion no React para estilização dinamica CSS-in-Js.`}),Kt($t,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render(Kt(_.StrictMode,{children:Kt(nn,{})}));
+`;function nn(){return qt(en,{children:[Kt(tn,{children:`Este é um exemplo de componente utilizando @Emotion no React para estilização dinâmica CSS-in-Js.`}),Kt($t,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render(Kt(_.StrictMode,{children:Kt(nn,{})}));
