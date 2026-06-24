@@ -17,26 +17,30 @@ box-shadow: 1px 1px 5px gray;
 margin-top: 10%;
 padding: 10px;
 width: 70%;
+@media(min-width: 650px){
+width: 50%;
+justify-self: center;
+margin-top: 0;
+}
 `,Yt=Ut.h1`
-font-size: 2rem;
+font-size: clamp(1.5rem, 4vw, 3rem);
 color: #282828;
 text-shadow: 1px 1px 1px lightgray;
 `,Xt=Ut.img`
-width: 100%;
 object-fit: cover;
 border-radius: 5px;
 `,Zt=Ut.h3`
 color: red;
-font-size
+font-size: clamp(1.5rem, 4vw, 3rem);
 text-shadow: 1px 1px 1px lightgray;
 `,Qt=Ut.button`
 background-color: ${({adicionado:e})=>e?`#198754`:`#6c757d`};
+font-size: clamp(1rem, 2vw, 2rem);
 border: none;
 border-radius: 8px;
 color: white;
 padding: 10px;
-text-shadow: 1px 1px 0px lightgray;
-
+text-shadow: 1px 0px 0px lightgray;
 `;function $t(){let[e,t]=(0,_.useState)(!1);return qt(Jt,{children:[Kt(Yt,{children:`Produto`}),Kt(Xt,{src:`https://placehold.co/100x50`,alt:`Produto`}),Kt(Zt,{children:`R$ 250,00`}),Kt(Qt,{adicionado:e,onClick:()=>t(!e),children:e?` 🛒 Adicionado!`:`🛒 Adicionar`})]})}var en=Ut.div`
 display: flex;
 flex-direction: column;
@@ -46,12 +50,22 @@ border-radius: 5px;
 box-shadow: 0px 0px 3px gray;
 margin: 10px;
 padding: 10px;
+
+@media (min-width: 650px){
+flex-direction: row;
+justify-content: space-between;
+}
 `,tn=Ut.h1`
-font-size: 1rem;
+font-size: clamp(1rem, 2vw, 3rem);
 color: #0e0e0e;
 text-align: justify;
-text-shadow: 1px 1px 1px lightgray;
+text-shadow: 1px 0px 1px lightgray;
 align-self: center;
 width: 70%;
+
+@media(min-width: 650px){
+width: 40%;
+padding: 10px;
+}
 
 `;function nn(){return qt(en,{children:[Kt(tn,{children:`Este é um exemplo de componente utilizando @Emotion no React para estilização dinamica CSS-in-Js.`}),Kt($t,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render(Kt(_.StrictMode,{children:Kt(nn,{})}));
